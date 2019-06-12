@@ -140,6 +140,6 @@ export function parse(code) {
     return null;
 }
 
-export function isValid(code) {
+export function isStateValid(code) {
     return isMalaysia(code) || isForeign(code);
 }

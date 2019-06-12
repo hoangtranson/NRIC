@@ -1,4 +1,4 @@
-import { isValid } from './state.helpers';
+import { isStateValid } from './state.helpers';
 
 function randomNumberBetween(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -34,7 +34,7 @@ function randomBirthplace() {
 
     do {
         randomCode = twoDigitFormat(randomNumberBetween(1, 99));
-    } while (!isValid(randomCode));
+    } while (!isStateValid(randomCode));
 
     return randomCode;
 }
