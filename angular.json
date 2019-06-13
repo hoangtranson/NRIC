@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "NRIC": {
+    "nric-sample": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/NRIC",
+            "outputPath": "dist/nric-sample",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "NRIC:build"
+            "browserTarget": "nric-sample:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "NRIC:build:production"
+              "browserTarget": "nric-sample:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "NRIC:build"
+            "browserTarget": "nric-sample:build"
           }
         },
         "lint": {
@@ -93,11 +93,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "NRIC:serve"
+            "devServerTarget": "nric-sample:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "NRIC:serve:production"
+              "devServerTarget": "nric-sample:serve:production"
             }
           }
         }
@@ -138,5 +138,5 @@
         }
       }
     }},
-  "defaultProject": "NRIC"
+  "defaultProject": "nric-sample"
 }
