@@ -8,7 +8,7 @@
     "build:lib": "ng build nric",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "test": "jest",
+    "test": "jest --watch",
     "coverage": "jest --coverage"
   },
   "jest": {
