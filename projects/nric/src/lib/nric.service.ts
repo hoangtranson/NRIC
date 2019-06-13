@@ -4,11 +4,11 @@ import { I_NRIC } from './service.interface';
 import { splitNRIC, combineToDate } from './service.helpers';
 import { isStateValid } from './state.helpers';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class NricService implements I_NRIC {
 
+  constructor(){}
+  
   isNRICValid(value: string): boolean {
     const [ input, year , month , day ,birthPlace, ...rest] = splitNRIC(value);
     const birthDate = combineToDate(year, month, day);
